@@ -119,7 +119,7 @@ void LCD::putAsciiString(int page, int col, char *c)
         }
         else
         {
-            putAsciiChar(page, col, *ch);//?true:putAsciiChar(page, col, ' ');
+            putAsciiChar(page, col, *ch)?true:putAsciiChar(page, col, ' ');
             col+=ASCIICHAR_W;
         }
     }
